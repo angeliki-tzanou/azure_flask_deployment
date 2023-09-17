@@ -9,7 +9,9 @@ Azure flask deployment
 
 ## Create in google cloud shell the following:
 - Create an ```app.py``` file where it will hold the root python codes for the flask app. In this case, the following was included:
-- The packages ```flask```, ```random``` and ```faker```
+- First import the packages ```flask```, ```random``` and ```faker```
+- Then following the format ```@app.route('/___.html')``` and filling in the name of the tab you want to be created.
+      - In this case: 
 ```
 from flask import Flask, render_template
 import random
