@@ -16,6 +16,10 @@ def home():
 def aboutpage():
     return render_template('about.html')
 
+@app.route('/data')
+def datapage():
+    return render_template('data.html')
+
 @app.route('/random')
 def randomnumber():
     number_var = random.randint(1, 10000)
