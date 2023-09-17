@@ -8,5 +8,39 @@ Azure flask deployment
 - Start adding content and information based on the desired outcome. In this case, the following content and changes were made:
 
 ## Create in google cloud shell the following:
-- Create an '''app.py''' file where it will hold the root python codes for the flask app. In this case the following was included:
+- Create an ```app.py``` file where it will hold the root python codes for the flask app. In this case, the following was included:
+``` from flask import Flask, render_template
+import random
+from faker import Faker
+
+fake = Faker()
+
+# small change
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/about')
+def aboutpage():
+    return render_template('about.html')
+
+@app.route('/data')
+def datapage():
+    return render_template('data.html')
+
+@app.route('/random')
+def randomnumber():
+    number_var = random.randint(1, 10000)
+    fake_address = fake.address()
+    return render_template('random.html', single_number = number_var, single_address = fake_address)
+
+if __name__ == '__main__':
+    app.run(
+        debug=True,
+        port=8080
+    )
+```
 
