@@ -1,21 +1,36 @@
-
 {% extends "base.html" %} 
 
 {% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Healthcare App</title>
+    <!--Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Custom CSS (if any) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero text-black">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h1>Welcome to My Azure Deployed Flask App!</h1>
+                    <p>This is a test</p>
+                </div>
+                <div class="col-lg-6">
+                   <!-- Added an image below-->
+                    <img src="{{ url_for('static', filename='image.png') }}">
 
-
-    <section class="mb-6">
-        <h2 class="text-xl mb-2">Welcome to my Azure Deployed Flask App (Test)!</h2>
-        <p>This is an example of a healthcare application designed and deployed through Azure.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2 class="text-xl mb-2">All coding Information:</h2>
-        <ul class="list-disc pl-5">
-            <li>All coding information used in this Flask app could be found in my repo: angeliki-tzanou/azure_flask_deployment</li>
-        </ul>
-    </section>
+    <!-- Rest of your content goes here -->
 
-
+</body>
+</html>
 
 {% endblock %}

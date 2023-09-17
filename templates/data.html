@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ title }}</title>
-    <!-- Include Bootstrap for basic styling (optional) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1>{{ title }}</h1>
-        <p>{{ description }}</p>
-    </div>
-</body>
-</html>
+{% extends "base.html" %} 
 
+{% block content %}
+
+    <section class="mb-6">
+        <h2 class="text-xl mb-2">About</h2>
+        <p>This is the Data section were future data information will be shown</p>
+    </section>
+
+    <section>
+        <h2 class="text-xl mb-2">Features</h2>
+        <ul class="list-disc pl-5">
+            <li>Secure patient data management</li>
+            <li>Easy appointment scheduling</li>
+            <li>Interactive dashboards for health metrics</li>
+        </ul>
+    </section>
+
+
+
+{% endblock %}
