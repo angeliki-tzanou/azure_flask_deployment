@@ -9,7 +9,9 @@ Azure flask deployment
 
 ## Create in google cloud shell the following:
 - Create an ```app.py``` file where it will hold the root python codes for the flask app. In this case, the following was included:
-``` from flask import Flask, render_template
+- The packages ```flask```, ```random``` and ```faker```
+```
+from flask import Flask, render_template
 import random
 from faker import Faker
 
