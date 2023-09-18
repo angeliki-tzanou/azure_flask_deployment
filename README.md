@@ -10,7 +10,7 @@ Azure flask deployment (https:// angeliki-504-flask.azurewebsites.net)
 ## Create in google cloud shell the following:
 - Create an ```app.py``` file where it will hold the root python codes for the flask app. In this case, the following was included:
 - First import the packages ```flask```, ```random``` and ```faker```
-- Then following the format ```@app.route('/___.html')``` and filling in the name of the tab you want to be created within the homebase ('/').
+- Then follow the format ```@app.route('/___.html')``` and fill in the name of the tab you want to be created within the homebase ('/').
 ( In this case: ```@app.route('/about')```, ```@app.route('/data')```, ```@app.route('/random')```, ```@app.route('/random')```)
 ```
 from flask import Flask, render_template
