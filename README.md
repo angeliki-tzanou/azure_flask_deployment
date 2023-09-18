@@ -49,6 +49,7 @@ if __name__ == '__main__':
 ```
 ## Creating the base.html format and following the same for the rest of the tabs:
 - Part of the code below depicts the way you can create the tabs within your base and name them as well with including editing of the text color and format.
+- When creating the rest of tabs such as About, Data etc. you need to extend the code from the ```base.html``` to integrate it under the following commands with ```{% extends "base.html" %} ```.
 ```
 <!--Below are the tabs created inside the app: Home, About, Data, Random Stuff-->
             <ul class="flex space-x-4">
@@ -56,3 +57,4 @@ if __name__ == '__main__':
                 <li><a href="/about" class="hover:underline text-white">About</a></li>
                 <li><a href="/data" class="hover:underline text-white">Data</a></li>
                 <li><a href="/random" class="hover:underline text-white">Random Stuff</a></li>```
+
