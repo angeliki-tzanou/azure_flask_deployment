@@ -68,4 +68,4 @@ if __name__ == '__main__':
 - First visit portal.Azure login page and create an account
 - There you will have to go to resource groups ( also shown in app services) and create a resource group with a unique name
 - After that going into your google shell environment you will need to type the following commands while making sure you are in the right location (can use ```ls``` and ```cd__``` to locate and move to the correct folder:
-
+    - ```az```, then run ```az login --use-device-code``` [to authorize your azure account to be linked with your google cloud shell work], then ```az webapp up --resource-group <groupname> --name <app-name> --runtime <PYTHON:3.9> --sku <B1> ``` [ to integrate the resource group previously created in Azure].
