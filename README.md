@@ -55,5 +55,4 @@ if __name__ == '__main__':
                 <li><a href="/" class="hover:underline text-white">Home</a></li>
                 <li><a href="/about" class="hover:underline text-white">About</a></li>
                 <li><a href="/data" class="hover:underline text-white">Data</a></li>
-                <li><a href="/random" class="hover:underline text-white">Random Stuff</a></li>
-          ```
+                <li><a href="/random" class="hover:underline text-white">Random Stuff</a></li>```
