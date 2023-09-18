@@ -57,4 +57,13 @@ if __name__ == '__main__':
                 <li><a href="/about" class="hover:underline text-white">About</a></li>
                 <li><a href="/data" class="hover:underline text-white">Data</a></li>
                 <li><a href="/random" class="hover:underline text-white">Random Stuff</a></li>```
+```
+## Then save all your progress to your repo through the following commands:
+- ```git add .```, ```git commit -m "___"```, ```git push```
 
+# Azure Deployment:
+## In order to deploy your flask app through Azure the following commands need to be used in the google shell cloud environment
+- First visit portal.Azure login page and create an account
+- There you will have to go to resource groups ( also shown in app services) and create a resource group with a unique name
+- After that going into your google shell environment you will need to type the following commands while making sure you are in the right location (can use ```ls``` and ```cd__``` to locate and move to the correct folder:
+    - 
