@@ -1,5 +1,5 @@
 # azure_flask_deployment: 
-Azure flask deployment (angeliki-504-flask.azurewebsites.net)
+Azure flask deployment (http:// angeliki-504-flask.azurewebsites.net)
 
 ## First create your repo
 - Go to your GitHub account and create a repo in this case named ```azure_flask_deployment```.
